@@ -1,0 +1,106 @@
+body {font-size: 75%; color:#333333; font-family:Arial, Helvetica, sans-serif;}
+
+/* **** Help **** */
+.l { display: inline; float: left; }
+.r { display: inline; float: right; }
+.out { position: absolute; left: -4000px; }
+.bold { font-weight: bold; }
+.br { clear: both; }
+.clearfix {zoom: 1;} 
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+.break {height: 1px; font-size: 1px; clear: both; overflow:hidden; visibility: hidden; display:block; margin:0; padding:0 !important; width:100% !important; border:none !important;}
+.small { font-size: 92%;}
+.big{font-size:117%;}
+.suppress { color: #666666; font-weight: normal; }
+.hidden { display: none; }
+.center { text-align:center; }
+.left { text-align: left !important; }
+.right { text-align: right;}
+.red{color:#CE0000;}
+.sprite{position:absolute; top:0px; left:0px; display:block; width:100%; height:100%;}
+.underline{text-decoration:underline;}
+a .sprite{cursor:pointer;}
+.col-h-l {float: left; display: inline; width: 48%;}
+.col-h-r {float: right; display: inline; width: 48%;}
+.error {color: #cc0000;}
+.no-margin {margin-top: 10px;}
+.no-border *, .no-border {border: none !important; background: none !important;}
+.reset{border:0; margin:0; padding:0; list-style:none; background:none;}
+.inline{display:inline;}
+
+/* HEADING RULES */
+h1, h2, h3, h4, h5, h6{font-family: Arial, Helvetica, sans-serif; padding:0; color:#494b5d;}
+h1{margin:0.05em 0 0.5em; font-size:233%; line-height: 1.2;}
+h2{margin:0.6em 0 0.45em; font-size:175%; font-weight:normal;}
+h3{margin:1.3em 0 0.2em; font-size:125%; line-height:1.3;}
+h4{margin:1.9em 0 0.4em; font-size: 108%; /*font-family: Tahoma, Arial, sans-serif;*/}
+h5, h6{margin:1.8em 0 0.5em; font-size:100%;}
+#col-side h2{margin:0; padding:10px 15px 9px; background:#f3f3f6 url('/img/bg/col-side-h2.png') 100% 0 repeat-y; font-weight:bold; font-size:133%; border:1px solid #cecdcd; border-width:1px 0;}
+.content h2{margin-top:1em;}
+
+
+/* PARAGRAPH RULES */
+p{line-height:1.5; margin:0.4em 0 1.5em;}
+.content p.note{margin-bottom:1.5em;}
+.content p{margin-bottom:1em;}
+
+/* ANCHOR RULES */
+a{color:#fa5800; outline: none;}
+a:hover{color: #333;}
+a.ext{ background:url(../img/ico-ext.png) 100% 10% no-repeat; padding-right:10px}
+a.more{ background:url('/img/ico/more.png') 0 0.25em no-repeat; padding-left:14px; margin-right:12px;}
+:focus{ -moz-outline-style: none;}
+
+/* LIST RULES */
+ul {margin: 0.7em 0 20px 10px; padding: 0;}
+ul ul {margin: 2px 0 0 5px;}
+ul li {line-height: 1.4; margin: 6px 0 6px; list-style: none; background: url('/img/bg/li.png') 0% 0.5em no-repeat; padding: 0 0 0 12px;}
+ul li li{padding: 0 0 0 12px;}
+ul.reset li{margin:0; padding:0; background:none;}
+
+ol {margin: 0 0 20px 45px; padding: 0;}
+ol li {line-height: 1.4; margin: 6px 0 6px; padding:0px;}
+
+dl {line-height: 1.4; margin: 0 0 20px 20px;}
+dl dt {font-weight: bold; margin: 5px 0 0;}
+dl dd {margin: 0 0 0 25px;}
+
+/* IMAGE RULES */
+img{border:0px;}
+img.l{margin:6px 20px 10px 0;}
+
+img.left{border:0px; margin: 6px 20px 10px 0; float: left; border: 1px solid #cecdcd; padding: 5px; background: #f2f2f5;}
+img.right{border:0px; margin: 6px 0px 10px 20px; float: right; border: 1px solid #cecdcd; padding: 5px; background: #f2f2f5;}
+.in img.l {border: 1px solid #DFDFDF; padding: 10px;}
+
+/* TABLE RULES */
+table{border: none; margin:0.2em 0 20px; font-size:100%; border-collapse:collapse; width:100%; clear:both;}
+caption{margin:1.3em 0 0.2em; font-size:125%; line-height:1.3; color:#494b5d; text-align: left; font-weight: bold; padding: 0 0 0 12px;}
+th{padding:8px 12px 8px; vertical-align: top; font-weight:bold; color:#48a1ca; font-size:117%; text-align:left; background:#D9F2FD;}
+td{padding:6px 12px 6px; background:#F2FAFE; border-top: 1px solid #a4d0e5;  vertical-align: middle;}
+tr{background:#fff;}
+tr.even td, tr.even th{background:#fff;}
+td.empty, th.empty{padding:0;}
+
+/* TEXT RULES */
+pre {text-align: left;}
+blockquote { margin: 30px auto; width: 580px; padding:0 10px 20px; background: url('/img/bg/blockquote.png') 50% 100% no-repeat; font-style: normal; font-family: arial, sand-serif; font-size:116.6%; color:#333;}
+blockquote p{margin:0;}
+cite, em, dfn, var {font-family: arial, sand-serif;}
+cite{ background: url('/img/bg/cite.png') 50% 100% no-repeat; float:right; width:220px; padding:0 10px 20px; font-size:108.4%; color:#494b5d; margin:0 0 15px 30px;}
+blockquote p {margin: 0;}
+hr{ margin:2em 0; *margin:0.5em 0 0em; padding:0; border:1px solid #BDBBB7; border-width: 1px 0 0; background: white; height:1px; overflow:hidden;}
+
+/* FORM RULES */
+form, fieldset{margin:0; padding:0; border:none;}
+form {padding: 20px; margin: 0 0 15px; background:#D9F2FD; -moz-border-radius: 10px;  -khtml-border-radius: 10px; border-radius: 10px; }
+.tabs-box form {padding: 20px; margin: 0 0 15px; background:#D9F2FD; -moz-border-radius: 0 10px 10px 10px; -khtml-border-radius: 0; border-radius: 0 10px 10px 10px; }
+label{position:relative; font-weight:bold;}
+label input{vertical-align:middle; position:relative; top:-1px; margin-left:0px;}
+.int-text{border:1px solid #d2d2d2; border-color:#abadb3 #e2e3ea #e2e3ea #e2e3ea; padding:6px 3px; font-family:arial, sans-serif; font-size:100%;}
+.form select.int-text{margin-top: 2px; padding: 5px 3px;}
+.fix-int{margin:2px 4px 0; display:block;}
+.fix-int .w-full{margin:0 -4px;}
+
+input.w-full{width:98%;}
+textarea.w-full{width:99%;}

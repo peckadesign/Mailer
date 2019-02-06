@@ -1,0 +1,15 @@
+parameters:
+
+
+application:
+	errorPresenter: Error
+	scanDirs: off
+	mapping:
+		*: \Pd\Mailer\*Module\Presenters\*Presenter
+
+
+services:
+	router: \Pd\Mailer\Router\RouterFactory::createRouter
+
+	-
+		factory: \Pd\Mailer\Forms\EmailFormFactory

@@ -1,0 +1,36 @@
+{block content}
+
+{form emailForm}
+	<p n:foreach="$form->getErrors() as $error">{$error}</p>
+
+	<fieldset>
+		<p class="col-h-l">
+			<label n:name="fromEmail">E-mail odesílatele:</label><br />
+			<span class="fix-int"><input n:name="fromEmail" class="int-text w-full" type="email" /></span>
+		</p>
+		<p class="col-h-r">
+			<label n:name="fromName">Jméno odesílatele:</label><br />
+			<span class="fix-int"><input n:name="fromName" class="int-text w-full" /></span>
+		</p>
+		<p class="col-h-l">
+			<label n:name="toEmail">E-mail příjemce:</label><br />
+			<span class="fix-int"><input n:name="toEmail" class="int-text w-full" type="email" /></span>
+		</p>
+		<p class="col-h-r">
+			<label n:name="toName">Jméno příjemce:</label><br />
+			<span class="fix-int"><input n:name="toName" class="int-text w-full" /></span>
+		</p>
+		<p>
+			<label n:name="subject">Předmět:</label><br />
+			<span class="fix-int"><input n:name="subject" class="int-text w-full" /></span>
+		</p>
+		<p>
+			<label n:name="html">HTML:</label><br/>
+			<span class="fix-int"><textarea n:name="html" cols="100" rows="15"></textarea></span>
+		</p>
+
+		<p class="right reset">
+			<input n:name="send">
+		</p>
+	</fieldset>
+{/form}

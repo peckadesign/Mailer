@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs" xml:lang="cs">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Language" content="cs" />
+	<meta name="Copyright" content="PeckaDesign, s.r.o." />
+	<meta name="Author" content="PeckaDesign (www.peckadesign.cz)" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<title>PeckaMailer</title>
+	<link rel="Stylesheet" href="/css/content.css" type="text/css" media="screen,projection" />
+	<link rel="Stylesheet" href="/css/layout.css" type="text/css" media="screen,projection" /><!--[if IE]><link rel="Stylesheet" href="/css/layout_ie.css" type="text/css" media="screen, projection" /><![endif]-->
+	<script type="text/javascript" src="/js/main.js"></script>
+</head>
+<body>
+	<div id="header">
+		<div class="inBox clearfix">
+			<h1 class="l"><a href="{plink :Homepage:}"><img src="/img/logo.png" alt="PeckaDesign Mailer" /></a></h1>
+		</div>
+	</div>
+	<div id="main">
+
+		<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
+
+		{include content}
+
+	</div>
+	<div id="footer">
+		<p class="reset">© 1998–2019 <strong>PeckaDesign, s.r.o.</strong></p>
+	</div>
+</body>
+</html>
