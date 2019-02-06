@@ -18,6 +18,8 @@ final class HomepagePresenter extends \Nette\Application\UI\Presenter
 
 	public function __construct(\Pd\Mailer\Forms\EmailFormFactory $emailFormFactory, \Nette\Mail\IMailer $mailer)
 	{
+		parent::__construct();
+
 		$this->emailFormFactory = $emailFormFactory;
 		$this->mailer = $mailer;
 	}

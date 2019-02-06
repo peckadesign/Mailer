@@ -12,12 +12,18 @@
 		"nette/mail": "^3.0",
 		"nette/utils": "^3.0",
 		"latte/latte": "^3.0",
-		"tracy/tracy": "^3.0"
+		"tracy/tracy": "^2.5"
+	},
+	"require-dev": {
+		"pd/coding-standard": "1.17.*",
+		"phpstan/phpstan": "0.10.*",
+		"phpstan/phpstan-strict-rules": "0.10.*",
+		"phpstan/phpstan-nette": "0.10.*"
 	},
 	"autoload": {
 		"psr-4": {
 			"Pd\\Mailer\\": "app"
 		}
 	},
-	"minimum-stability": "dev"
+	"minimum-stability": "beta"
 }
