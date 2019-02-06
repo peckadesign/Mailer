@@ -12,7 +12,7 @@
 		"nette/mail": "^3.0",
 		"nette/utils": "^3.0",
 		"latte/latte": "^3.0",
-		"tracy/tracy": "^3.0"
+		"tracy/tracy": "^2.5"
 	},
 	"require-dev": {
 		"pd/coding-standard": "1.17.*",
@@ -25,5 +25,5 @@
 			"Pd\\Mailer\\": "app"
 		}
 	},
-	"minimum-stability": "dev"
+	"minimum-stability": "beta"
 }
