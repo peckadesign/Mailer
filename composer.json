@@ -14,6 +14,12 @@
 		"latte/latte": "^3.0",
 		"tracy/tracy": "^3.0"
 	},
+	"require-dev": {
+		"pd/coding-standard": "1.17.*",
+		"phpstan/phpstan": "0.10.*",
+		"phpstan/phpstan-strict-rules": "0.10.*",
+		"phpstan/phpstan-nette": "0.10.*"
+	},
 	"autoload": {
 		"psr-4": {
 			"Pd\\Mailer\\": "app"
