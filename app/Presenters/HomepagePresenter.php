@@ -32,11 +32,15 @@ final class HomepagePresenter extends \Nette\Application\UI\Presenter
 		$form->addSubmit('send', 'Odeslat');
 
 		$form->onSuccess[] = function (\Nette\Application\UI\Form $form, $values) {
+
+			$htmlWithInlineCss = (new \TijsVerkoyen\CssToInlineStyles\CssToInlineStyles())
+				->convert($values[\Pd\Mailer\Forms\EmailFormFactory::INPUT_HTML]);
+
 			$message = new \Nette\Mail\Message();
 			$message->setFrom($values[\Pd\Mailer\Forms\EmailFormFactory::INPUT_FROM_EMAIL], $values[\Pd\Mailer\Forms\EmailFormFactory::INPUT_FROM_NAME]);
 			$message->addTo($values[\Pd\Mailer\Forms\EmailFormFactory::INPUT_TO_EMAIL], $values[\Pd\Mailer\Forms\EmailFormFactory::INPUT_TO_NAME]);
 			$message->setSubject($values[\Pd\Mailer\Forms\EmailFormFactory::INPUT_SUBJECT]);
-			$message->setHtmlBody($values[\Pd\Mailer\Forms\EmailFormFactory::INPUT_HTML]);
+			$message->setHtmlBody($htmlWithInlineCss);
 
 			$this->mailer->send($message);
 

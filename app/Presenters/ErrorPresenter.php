@@ -7,6 +7,7 @@ final class ErrorPresenter implements \Nette\Application\IPresenter
 
 	use \Nette\SmartObject;
 
+
 	/** @var \Tracy\ILogger */
 	private $logger;
 
@@ -35,4 +36,5 @@ final class ErrorPresenter implements \Nette\Application\IPresenter
 			}
 		});
 	}
+
 }
