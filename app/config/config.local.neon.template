@@ -1,0 +1,7 @@
+tracy:
+	bar:
+		- Nextras\MailPanel\MailPanel(%tempDir%/mail-panel-latte)
+
+services:
+	mail.mailer:
+		factory: Nextras\MailPanel\FileMailer(%tempDir%/mail-panel-mails)
