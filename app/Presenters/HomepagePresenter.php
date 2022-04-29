@@ -44,7 +44,7 @@ final class HomepagePresenter extends \Nette\Application\UI\Presenter
 
 			$this->mailer->send($message);
 
-			$this->flashMessage('Odesláno', 'ok');
+			$this->flashMessage('Odesláno', 'success');
 		};
 
 		return $form;
