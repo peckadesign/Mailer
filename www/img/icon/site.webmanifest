@@ -1,0 +1,19 @@
+{
+    "name": "PeckaDesign Mailer",
+    "short_name": "PeckaDesign Mailer",
+    "icons": [
+        {
+            "src": "/img/icon/android-chrome-192x192.png?v=xQdX8w6lmP",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/icon/android-chrome-512x512.png?v=xQdX8w6lmP",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#e9473f",
+    "background_color": "#e9473f",
+    "display": "standalone"
+}
