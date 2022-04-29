@@ -1,0 +1,8 @@
+services:
+  web:
+    image: peckadesign/php:7.1-megapixel
+    volumes:
+      - ./.docker/web/apache:/etc/apache2/sites-enabled
+      - ./:/var/www/html
+    ports:
+      - 80:80
