@@ -7,4 +7,4 @@ cs:
 	vendor/bin/phpcs app/ --standard=vendor/pd/coding-standard/src/PeckaCodingStandardStrict/ruleset.xml
 
 phpstan:
-	vendor/bin/phpstan analyse app/ --level 1 -c phpstan.neon --no-progress
+	vendor/bin/phpstan analyse app/ --level 6 -c phpstan.neon --no-progress

@@ -17,9 +17,9 @@
 	},
 	"require-dev": {
 		"pd/coding-standard": "1.17.*",
-		"phpstan/phpstan": "0.10.*",
-		"phpstan/phpstan-strict-rules": "0.10.*",
-		"phpstan/phpstan-nette": "0.10.*",
+		"phpstan/phpstan": "0.12.*",
+		"phpstan/phpstan-strict-rules": "0.12.*",
+		"phpstan/phpstan-nette": "0.12.*",
 		"nextras/mail-panel": "^2.5"
 	},
 	"autoload": {
