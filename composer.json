@@ -12,7 +12,8 @@
 		"nette/mail": "^3.0",
 		"nette/utils": "^3.0",
 		"latte/latte": "^3.0",
-		"tracy/tracy": "^2.5"
+		"tracy/tracy": "^2.5",
+		"tijsverkoyen/css-to-inline-styles": "^2.2"
 	},
 	"require-dev": {
 		"pd/coding-standard": "1.17.*",
