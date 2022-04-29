@@ -3,7 +3,7 @@ parameters:
 
 application:
 	errorPresenter: Error
-	scanDirs: off
+	scanDirs: false
 	mapping:
 		*: \Pd\Mailer\*Module\Presenters\*Presenter
 
