@@ -16,7 +16,7 @@
 		"tijsverkoyen/css-to-inline-styles": "^2.2"
 	},
 	"require-dev": {
-		"pd/coding-standard": "1.17.*",
+		"pd/coding-standard": "1.27.*",
 		"phpstan/phpstan": "0.12.*",
 		"phpstan/phpstan-strict-rules": "0.12.*",
 		"phpstan/phpstan-nette": "0.12.*",
